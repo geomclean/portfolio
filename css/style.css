@@ -1,12 +1,10 @@
 
-
 body{
 	font-family: 'PT Sans';
 	background-color: #6B7A63;
 	color:#e6e6e6;
 	background-image: radial-gradient(#e6e6e66b 5%, transparent 5%);
 	background-size: 25px 25px;
-
 }
 
 h1, h2{
@@ -57,7 +55,6 @@ div.grid{
 	width: 95%;
 	column-count: 3;
 	margin: auto;
-	grid-auto-rows: auto;
 }
 
 .column {
@@ -68,8 +65,7 @@ div.grid{
 	border-radius: 10px;
 	box-shadow: 5px 5px 0px #6b705c;
 	object-fit: contain;
-	padding-bottom: 15%;
-	row-gap: 100px;
+	display: block;
 }
 
 img{
@@ -94,17 +90,13 @@ img{
 	padding: 8px 0;
 	box-shadow: 5px 5px 0px #6b705c;
 	border-radius: 10px;
-}
-
-.sidenav a:hover {
-  color: #064579;
+	background-image: url("assets/texture/paper.JPG") ;
 }
 
 .main {
   margin-left: 25%; /* Same width as the sidebar + left position in px */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
-  
 }
 
 #iframe{
