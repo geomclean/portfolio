@@ -2,7 +2,7 @@
 
 body{
 	font-family: 'PT Sans';
-	background-color: #b7b7a4;
+	background-color: #6B7A63;
 	color:#e6e6e6;
 	background-image: url('assets/pinkTreesPortraitCrop.jpg');
 	background-repeat:repeat-x;
@@ -12,16 +12,18 @@ body{
 h1, h2{
 	text-align: left;
 	font-family: 'Cormorant';
-	font-size: 250%;
-	text-shadow: 1px 1px 0px #6b705c;
-	line-height: 20%;
+	font-size: 50px;
+	color: #4A3525;
+	padding-left: 3%;
+	line-height: 7%;
 }
 
 p{
-	color:#e6e6e6;
+	color:#A35339;
 	font-family: 'Cormorant';
-	text-shadow: 1px 1px 0px #6b705c;
-	font-size: 120%;
+	font-size: 110%;
+	padding-left: 3%;
+	font-weight: bold;
 }
 
 #footer {
@@ -38,37 +40,98 @@ p{
 }
 
 div.grid{
-	width: 70%;
-	column-count: 2;
+	width: 95%;
+	column-count: 3;
 	margin: auto;
 }
 
 .column {
 	margin:auto;
 	float: left;
-	width: 50%;
-	padding: 3%;
+	width: 90%;
+	padding: 3%; 
+	border-radius: 10px;
+	height: 500px;
 }
 
 img{
-	width: 50%;
+	width: 80%;
+	margin: auto;
+	display: block;
 }
 
 .parabox{
-	width: 250%;
-	toppadding: 5%;
-	color: #6b705c;
-	background-image: linear-gradient(#e6e6e6 0%, #e6e6e6 100%);
-  	border-radius: 30px;
+	color: #F5F2EC;
+  	border-radius: 10px;
 }
 
+.sidenav {
+	width: 25%;
+	position: fixed;
+	z-index: 1;
+	top: 20px;
+	left: 10px;
+	background: #ffe8d6;
+	overflow-x: hidden;
+	padding: 8px 0;
+	border-radius: 10px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 26%; /* Same width as the sidebar + left position in px */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  
+}
 
 @media only screen and (max-width: 600px) {
+	.sidenav {
+		padding-top: 10px;
+		width: 98%;
+		margin: auto;
+		left: 1%;
+		right: 1%;
+		position:relative;
+	}
 
-	.column {
-		margin-left:auto;
-		margin-right:auto;
-		width: 100%;
+  	.sidenav a {font-size: 18px;}
+
+	.main{
+		padding-top: 18px;
+		margin-left: 0%;
+		position: relative;
 		display: block;
 	}
+
+	#footer{
+		width: 98%;
+		left: 1%;
+	}
+
+	div.grid{
+		width: 95%;
+		column-count: 2;
+		margin: auto;
+	}
+
+	.column {
+		margin: auto;
+		float: left;
+		width: 95%; 
+		border-radius: 10px;
+		height: 90%;
+	}
+
 }
