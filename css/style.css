@@ -3,7 +3,7 @@ body{
 	font-family: 'PT Sans';
 	background-color: #6B7A63;
 	color:#e6e6e6;
-	background-image: radial-gradient(#e6e6e66b 5%, transparent 5%);
+	background-image: radial-gradient(#e6e6e68a 5%, transparent 5%);
 	background-size: 25px 25px;
 }
 
@@ -65,7 +65,8 @@ div.grid{
 	border-radius: 10px;
 	box-shadow: 5px 5px 0px #6b705c;
 	object-fit: contain;
-	display: block;
+	display: inline-block;
+	break-inside: avoid-column;  
 }
 
 img{
@@ -90,7 +91,6 @@ img{
 	padding: 8px 0;
 	box-shadow: 5px 5px 0px #6b705c;
 	border-radius: 10px;
-	background-image: url("assets/texture/paper.JPG") ;
 }
 
 .main {
@@ -105,24 +105,33 @@ img{
 
 #img2{
 	display: block;
-	margin-right: -20%;
-	height: 5%;
+	margin-right: -10%;
+	width: 40%;
 	object-fit: contain;
+	margin-top: -7%;
+}
+
+#img3{
+	width:80%;
+	margin: auto;
+	display: block;
+	box-shadow: 5px 5px 0px #6b705c;
+
 }
 
 @media only screen and (max-width: 600px) {
 	.sidenav {
-		padding-top: 10px;
-		width: 98%;
-		margin: auto;
+		width: 90%;
 		left: 1%;
 		right: 1%;
+		margin: auto;
 		position:relative;
 		height: 50%;
+		margin-top: -10px;
 	}
 
 	img{
-		width: 60%;
+		width: 50%;
 	}
 
   	.sidenav a {font-size: 18px;}
@@ -140,21 +149,21 @@ img{
 	}
 
 	div.grid{
-		width: 95%;
+		width: 104%;
 		column-count: 1;
-		margin: auto;
+		margin-left: -5%;
 	}
 
 	.column {
 		margin: auto;
-		float: left;
-		width: 95%; 
-		border-radius: 10px;
-		height: 90%;
+		width: 100%;
 	}
 
 	#img2{
-		height: 10%;
+		margin-right: 2%;
+		width: 20%;
+		object-fit: contain;
+		margin-top: 5%;
 	}
 
 }
